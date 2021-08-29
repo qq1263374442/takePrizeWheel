@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,
+    width=device-width,initial-scale=1.0" />
+    <title>抽奖轮盘</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- <link rel="stylesheet" href="./css/normalize.css"> -->
+    <!-- 移动端适配flexible -->
+    <script src="./js/index.min.js"></script>
+    <!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> -->
+</head>
+<body>
+    
+
+    <!-- 抽奖轮盘：外层闪烁+中间奖品+中心指针+中奖后闪烁 -->
+    <div class="wheel">
+
+        <!-- 外层闪烁 -->
+        <ul class="wheel-light">
+            <li><i></i><i></i><i></i><i></i></li>
+            <li><i></i><i></i><i></i><i></i></li>
+            <li><i></i><i></i><i></i><i></i></li>
+            <li><i></i><i></i><i></i><i></i></li>
+            <li><i></i><i></i><i></i><i></i></li>
+            <li><i></i><i></i><i></i><i></i></li>
+        </ul>
+
+        <!-- 中间奖品 -->
+        <ul id="wheel" class="wheel-list">
+            <li>
+                <i></i>
+                <div class="prize">
+                    <p id="data1">谢谢参与</p>
+                    <img src="./images/prize_img1.png" alt="">
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div class="prize">
+                    <p id="data2">谢谢参与</p>
+                    <img src="./images/prize_img2.png" alt="">
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div class="prize">
+                    <p id="data3">谢谢参与</p>
+                    <img src="./images/prize_img3.png" alt="">
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div class="prize">
+                    <p id="data4">谢谢参与</p>
+                    <img src="./images/prize_img4.png" alt="">
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div class="prize">
+                    <p id="data5">谢谢参与</p>
+                    <img src="./images/prize_img5.png" alt="">
+                </div>
+            </li>
+            <li>
+                <i></i>
+                <div class="prize">
+                    <p id="data6">谢谢参与</p>
+                    <img src="./images/prize_img6.png" alt="">
+                </div>
+            </li>
+        </ul>
+
+        <!-- 中心指针 -->
+        <div id="pointer" class="wheel-pointer">
+            <div id="button" class="button">
+                <strong>抽</strong>
+            </div>
+        </div>
+
+        <!-- 中奖后闪烁 -->
+        <div class="twinkle-box">
+            <div id="twinkle" class="twinkle"></div>
+        </div>
+    </div>
+
+    <!-- 遮罩层+弹出奖品 -->
+    <div class="mask"></div>
+    <div class="show-prize">
+        <img src="./images/prize.png" alt="" class="prize-container">
+        <div class="prize-info">123456</div>
+        <img src="./images/close.png" alt="" class="close">
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jQueryRotate.js"></script>
+    <!-- <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+    <script src="./js/axios.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
